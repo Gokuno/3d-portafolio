@@ -168,6 +168,30 @@ import {
       ],
     },
   ];
+
+  const webdesign = [
+    {
+      name: "1UP Web Designs",
+      description:
+        "Agencia de diseño, desarrollo y marketing digital",
+      tags: [
+        {
+          name: "react",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "mongodb",
+          color: "green-text-gradient",
+        },
+        {
+          name: "tailwind",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: carrent,
+      source_code_link: "https://1upwebdesigns.com/",
+    },
+  ];
   
   const testimonials = [
     {
@@ -262,4 +286,4 @@ import {
     },
   ];
   
-  export { services, technologies, experiences, testimonials, projects };
+  export { services, technologies, experiences, testimonials, webdesign, projects };

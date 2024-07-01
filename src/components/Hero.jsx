@@ -9,13 +9,13 @@ const Hero = () => {
      <div
         className={`${styles.paddingX} absolute inset-0 top-[120px]  max-w-7xl mx-auto flex flex-row pt-5 items-start gap-5`}
       >
-        <div className='flex flex-col justify-center items-center mt-5'>
+        <div className='flex flex-col justify-center items-center mt-5 pr-8'>
           <div className='w-5 h-5 rounded-full bg-[#1CACE0]' />
           <div className='w-1 sm:h-80 h-40 blue-gradient' />
         </div>
 
         <div>
-          <h1 className={`${styles.heroHeadText} text-white`}>
+          <h1 className={`${styles.heroHeadText} text-white py-5 `}>
           <span className='break-on-small'>Hola, soy </span>
           <span className='break-on-small text-[#1CACE0]'>
             Allan

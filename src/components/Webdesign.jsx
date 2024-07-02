@@ -21,8 +21,8 @@ const WebCard = ({ index, name, description, tags, image, source_code_link }) =>
       >
         <div className="relative w-full h-[430px]">
           <img 
-            src={image}
-            alt={name}
+            src='src\assets\1upwebdesigns.png'
+            alt='1UP Web Designs'
             className='w-full h-full object-cover rounded-2xl'
           />
 

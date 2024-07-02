@@ -6,6 +6,7 @@ import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
+import Socials from "./Socials";
 
 
 const Contact = () => {
@@ -72,6 +73,10 @@ const Contact = () => {
       >
         <p className={styles.sectionSubText}>Ponte en contacto</p>
         <h3 className={styles.sectionHeadText}>Contacto.</h3>
+        <div className="mt-5">
+          <Socials />
+        </div>
+        
 
         <form 
           ref={formRef}

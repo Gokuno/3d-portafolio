@@ -19,7 +19,7 @@ const Tech = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 mb-10 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
-        Soy ingeniero en Mecatronica especializado en desarrollador de software capacitado con experiencia en JavaScript, y experto en frameworks como React, Node.js, Three.js entre otros. Aprendo rápido y colaboro estrechamente con los clientes para crear soluciones eficientes, escalables y fáciles de usar que resuelvan problemas del mundo real. ¡Trabajemos juntos para dar vida a tus ideas!
+        Estas son algunas de las tecnologias con las que he trabajado en los proyectos que he realizado.
       </motion.p>
 
     <div className="flex flex-row flex-wrap justify-center gap-10">

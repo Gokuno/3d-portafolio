@@ -3,7 +3,7 @@ import { Tilt } from "react-tilt";
 import { motion, spring } from "framer-motion";
 
 import { styles } from "../styles";
-import { github } from "../assets";
+import { FaFacebook, FaGlobe } from 'react-icons/fa';
 import { SectionWrapper } from "../hoc";
 import { webdesign } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
@@ -31,11 +31,15 @@ const WebCard = ({ index, name, description, tags, image, source_code_link }) =>
               onClick={() => window.open(source_code_link, "_blank")}
               className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
             >
-              <img 
-                src={github}
-                alt="github"
-                className="w-1/2 h-1/2 object-contain"
-              />
+          <div className="flex flex-row gap-3 pr-11">
+          <a href="https://www.facebook.com/1UPWebDesigns" target="_blank" rel="noopener noreferrer" className="bg-black w-10 h-10 rounded-full flex justify-center items-center cursor-pointer">
+              <FaFacebook size={30} />
+            </a>
+            <a href="https://1upwebdesigns.com" target="_blank" rel="noopener noreferrer" className="bg-black w-10 h-10 rounded-full flex justify-center items-center cursor-pointer">
+              <FaGlobe size={30} />
+            </a>
+          </div>
+      
             </div>
           </div>
         </div>
@@ -44,11 +48,7 @@ const WebCard = ({ index, name, description, tags, image, source_code_link }) =>
           <h3 className="text-white font-bold text-[20px]">{name}</h3>
           <p className="mt-2 text-secondary text-[16px]">{description}</p>
         </div>
-        <div className="mt-4 flex flex-wrap gap-2">
-          {tags.map((tag) => (
-           <p key={tag.name} className={`text-[14px] ${tag.color}`}>#{tag.name}</p> 
-          ))}
-        </div>
+        
       </Tilt>
     </motion.div>
   )
@@ -71,7 +71,7 @@ const Webdesign = () => {
           variants={fadeIn("", "", 0.1, 1)}
           className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
         >
-          Los siguientes proyectos muestran mis habilidades y experiencia a través de ejemplos reales de mi trabajo. Cada proyecto se describe brevemente con enlaces a los repositorios de código y demostraciones en vivo. Reflejan mi capacidad para resolver problemas complejos, trabajar con diferentes tecnologías y gestionar proyectos de manera efectiva.
+          En 1UP Web Designs es donde he realizado muchos de mis trabajos para clientes, visita la pagina para ver mas sitios web que he diseñado y desarrollado para distintos negocios.
         </motion.p>
       </div>
 

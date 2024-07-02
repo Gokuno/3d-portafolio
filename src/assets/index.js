@@ -19,12 +19,14 @@ import reactjs from "./tech/reactjs.png";
 import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
+import nextjs from "./tech/nextjs.png";
 import threejs from "./tech/threejs.svg";
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
+import up from "./company/1UP.png"
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
@@ -51,10 +53,12 @@ export {
   redux,
   tailwind,
   typescript,
+  nextjs,
   threejs,
   meta,
   shopify,
   starbucks,
+  up,
   tesla,
   carrent,
   jobit,

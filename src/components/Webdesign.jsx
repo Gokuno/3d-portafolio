@@ -17,9 +17,9 @@ const WebCard = ({ index, name, description, tags, image, source_code_link }) =>
           scale: 1,
           speed: 450
         }}
-        className="bg-black p-5 rounded-2xl w-full"
+        className="bg-[#232426] p-5 rounded-2xl w-full"
       >
-        <div className="relative w-full h-[230px]">
+        <div className="relative w-full h-[430px]">
           <img 
             src={image}
             alt={name}

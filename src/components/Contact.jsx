@@ -7,6 +7,7 @@ import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 
+
 const Contact = () => {
   const formRef = useRef();
   const [form, setForm] = useState({
@@ -16,12 +17,52 @@ const Contact = () => {
   });
   const [loading, setLoading] = useState(false);
 
-  const handleChange =(e) => {
+  const handleChange = (e) => {
+    const { target } = e;
+    const { name, value } = target;
 
-  }
-  const handleSubmit =(e) => {
-    
-  }
+    setForm({
+      ...form,
+      [name]: value,
+    });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setLoading(true);
+
+    emailjs
+      .send(
+        import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+        {
+          from_name: form.name,
+          to_name: "Allan Paz",
+          from_email: form.email,
+          to_email: "1upwebdeveloper@gmail.com",
+          message: form.message,
+        },
+        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
+      )
+      .then(
+        () => {
+          setLoading(false);
+          alert("Gracias. Me pondre en contacto tan pronto como me sea posible.");
+
+          setForm({
+            name: "",
+            email: "",
+            message: "",
+          });
+        },
+        (error) => {
+          setLoading(false);
+          console.error(error);
+
+          alert("Hubo un error.");
+        }
+      );
+  };
 
   return (
     <div className="xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden">
@@ -65,7 +106,7 @@ const Contact = () => {
             <span className="text-white font-medium mb-4">Mensaje o comentario</span>
             <textarea
               rows='7'
-              name='name'
+              name='message'
               value={form.message}
               onChange={handleChange}
               placeholder="Deja un mensaje o comentario."
@@ -81,6 +122,13 @@ const Contact = () => {
           </button>
 
         </form>
+      </motion.div>
+      <motion.div
+        variants={slideIn('right', 'tween', 0.2, 1)}
+        className="xl:flex-1 xl:h-auto md:h-[550px] h-[350]"
+      >
+        <EarthCanvas />
+
       </motion.div>
     </div>
   )

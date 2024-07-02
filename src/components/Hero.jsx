@@ -21,7 +21,7 @@ const Hero = () => {
             Allan
             </span>
           </h1>
-          <p className={`${styles.heroSubText} mt-8 text-white-100`}>
+          <p className={`${styles.heroSubText} mt-4 text-white-100`}>
             Soy ingeniero en Mecatronica, <br className='sm:block hidden' />
             Disenador UI/UX y Desarrollador Web Fullstack.
           </p>

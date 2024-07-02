@@ -22,8 +22,12 @@ import {
     shopify,
     nextjs,
     carrent,
+    todolist,
     jobit,
+    gymapp,
     tripguide,
+    nasaapp,
+    talkscribe,
     threejs,
   } from "../assets";
   
@@ -224,58 +228,16 @@ import {
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "Lista de haceres",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "Aplicacion web CRUD usando ReactJS usando que te permite crear, editar y borrar listas de pendientes o cosas que hacer. ",
       tags: [
         {
           name: "react",
           color: "blue-text-gradient",
         },
         {
-          name: "mongodb",
-          color: "green-text-gradient",
-        },
-        {
-          name: "tailwind",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: carrent,
-      source_code_link: "https://github.com/",
-    },
-    {
-      name: "Job IT",
-      description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-      tags: [
-        {
-          name: "react",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "restapi",
-          color: "green-text-gradient",
-        },
-        {
-          name: "scss",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: jobit,
-      source_code_link: "https://github.com/",
-    },
-    {
-      name: "Trip Guide",
-      description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-      tags: [
-        {
-          name: "nextjs",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "supabase",
+          name: "html",
           color: "green-text-gradient",
         },
         {
@@ -283,8 +245,72 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
+      image: todolist,
+      source_code_link: "https://github.com/Gokuno/reactjs-lista",
+      app_link: "https://listadehacer-react.netlify.app/",
+    },
+    {
+      name: "Fitness Helper",
+      description:
+        "Aplicacion web con ReactJS y Tailwind CSS. Esta app te permite seleccionar rutinas de entrenamiento, seccion corporal que quieres desarrollar y metas. Te da una descripcion de las rutina y tiene contador de set. ",
+      tags: [
+        {
+          name: "react",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "tailwind",
+          color: "pink-text-gradient",
+        },
+    
+      ],
+      image: gymapp,
+      source_code_link: "https://github.com/Gokuno/gym-app",
+      app_link: "https://appdegym.netlify.app/",
+    },
+    {
+      name: "Proyecto APOD",
+      description:
+        "APOD o foto astronomica del dia, esta app se conecta por medio de API a la NASA lo cual permite mostrar la foto del dia en tiempo real, asi como actualiza nombre y descripcion de la foto.",
+      tags: [
+        {
+          name: "reactjs",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "html",
+          color: "green-text-gradient",
+        },
+        {
+          name: "css",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: nasaapp,
+      source_code_link: "https://github.com/Gokuno/nasa-react-app",
+      app_link: "https://nasa-apod-reacjs-app.netlify.app/",
+    },
+    {
+      name: "Talkscribe",
+      description:
+        "Aplicacion web en React que transcribe y traduce que utiliza web workers para correr un model de Machine Learning por medio del navegador. ",
+      tags: [
+        {
+          name: "reactjs",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "web",
+          color: "green-text-gradient",
+        },
+        {
+          name: "git",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: talkscribe,
+      source_code_link: "https://github.com/Gokuno/machinelearning-app",
+      app_link: "https://talkscribe.netlify.app/",
     },
   ];
   

@@ -29,8 +29,12 @@ import tesla from "./company/tesla.png";
 import up from "./company/1UP.png"
 
 import carrent from "./carrent.png";
+import todolist from "./todolist.png";
 import jobit from "./jobit.png";
+import gymapp from "./gymapp.png";
 import tripguide from "./tripguide.png";
+import nasaapp from "./nasaapp.png";
+import talkscribe from "./talkscribe.png";
 
 export {
   logo,
@@ -61,6 +65,10 @@ export {
   up,
   tesla,
   carrent,
+  todolist,
   jobit,
+  gymapp,
   tripguide,
+  nasaapp,
+  talkscribe,
 };
